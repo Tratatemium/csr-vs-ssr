@@ -55,19 +55,11 @@
 }
 
 .item-icon.browser {
-  background: linear-gradient(
-    to bottom right,
-    var(--color-accent-A-1),
-    var(--color-accent-A-2)
-  );
+  background: var(--gradient-A);
 }
 
 .item-icon.server {
-  background: linear-gradient(
-    to bottom right,
-    var(--color-accent-B-1),
-    var(--color-accent-B-2)
-  );
+  background: var(--gradient-B);
 }
 
 .sections-nav {
@@ -90,18 +82,10 @@
 
 .nav-link.CSR:hover {
     border-color: var(--color-accent-A-3);
-    background: linear-gradient(
-    to bottom right,
-    var(--color-accent-A-1),
-    var(--color-accent-A-2)
-  );
+    background: var(--gradient-A);
 }
 
 .nav-link.SSR:hover {
     border-color: var(--color-accent-B-3);
-    background: linear-gradient(
-    to bottom right,
-    var(--color-accent-B-1),
-    var(--color-accent-B-2)
-  );
+    background: var(--gradient-B);
 }

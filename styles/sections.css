@@ -1,0 +1,32 @@
+.server-side-rendering,
+.client-side-rendering {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 3em 1em;
+}
+
+.section-badge {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  padding: 0.3em 0.6em;
+  border-radius: 0.5em;
+  color: var(--color-text-reverse);
+  font-size: 0.9em;
+}
+
+.section-badge svg {
+  width: 1.1em;
+  height: auto;
+}
+
+.section-badge.CSR {
+  color: var(--color-accent-A-3);
+  background: var(--color-accent-A-light);
+}
+
+.section-badge.SSR {
+  color: var(--color-accent-B-3);
+  background: var(--color-accent-B-light);
+}

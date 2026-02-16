@@ -16,8 +16,23 @@
   --color-accent-A-1: #2b7fff;
   --color-accent-A-2: #155dfc;
   --color-accent-A-3: #1447e6;
+  --color-accent-A-light: rgba(43, 127, 255, 0.3);
+
+  --gradient-A: linear-gradient(
+    to bottom right,
+    var(--color-accent-A-1),
+    var(--color-accent-A-2)
+  );
 
   /* Colors - Accent B (Purple) */
   --color-accent-B-1: #ad46ff;
   --color-accent-B-2: #9810fa;
+  --color-accent-B-3: #8000e6;
+  --color-accent-B-light: rgba(173, 70, 255, 0.4);
+
+  --gradient-B: linear-gradient(
+    to bottom right,
+    var(--color-accent-B-1),
+    var(--color-accent-B-2)
+  );
 }

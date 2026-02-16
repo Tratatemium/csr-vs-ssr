@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 1em auto;
+  margin: 3em auto;
   gap: 1em;
   color: var(--color-text-secondary);
 }
@@ -66,6 +66,14 @@
   display: flex;
   flex-direction: row;
   gap: 1em;
+}
+
+.hero-content p {
+  display: block;
+  text-align: center;
+  width: 40ch;
+  font-size: 1.2em;
+  margin: 1em;
 }
 
 .nav-link {

@@ -5,6 +5,7 @@
 
   /* Colors - Background */
   --color-background: #ffffff;
+  --color-background-secondary: rgba(150, 150, 150, 0.15);
 
   /* Colors - Text */
   --color-text-primary: #314158;
@@ -34,5 +35,29 @@
     to bottom right,
     var(--color-accent-B-1),
     var(--color-accent-B-2)
+  );
+
+  /* Colors - Accent C (Green) */
+  --color-accent-C-1: #00c847;
+  --color-accent-C-2: #00a63e;
+  --color-accent-C-3: #008630;
+  --color-accent-C-light: rgba(0, 200, 71, 0.3);
+
+  --gradient-C: linear-gradient(
+    to bottom right,
+    var(--color-accent-C-1),
+    var(--color-accent-C-2)
+  );
+
+  /* Colors - Accent D (Orange) */
+  --color-accent-D-1: #ff8c00;
+  --color-accent-D-2: #e17100;
+  --color-accent-D-3: #c55a00;
+  --color-accent-D-light: rgba(255, 140, 0, 0.3);
+
+  --gradient-D: linear-gradient(
+    to bottom right,
+    var(--color-accent-D-1),
+    var(--color-accent-D-2)
   );
 }

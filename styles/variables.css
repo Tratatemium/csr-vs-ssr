@@ -1,3 +1,23 @@
 :root {
-  --background: #ffffff;
+  /* Font families */
+  --font-family-primary: "Inter", sans-serif;
+  --font-family-headings: "Poppins", sans-serif;
+
+  /* Colors - Background */
+  --color-background: #ffffff;
+
+  /* Colors - Text */
+  --color-text-primary: #314158;
+  --color-text-secondary: #45556c;
+  --color-text-accent: #0f172b;
+  --color-text-reverse: #ffffff;
+
+  /* Colors - Accent A (Blue) */
+  --color-accent-A-1: #2b7fff;
+  --color-accent-A-2: #155dfc;
+  --color-accent-A-3: #1447e6;
+
+  /* Colors - Accent B (Purple) */
+  --color-accent-B-1: #ad46ff;
+  --color-accent-B-2: #9810fa;
 }

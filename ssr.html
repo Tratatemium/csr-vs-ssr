@@ -75,9 +75,125 @@
                     </div>
                 </div>
                 <nav class="sections-nav">
-                    <a class="nav-link CSR" href="">Explore CSR</a>
-                    <a class="nav-link SSR" href="">Explore SSR</a>
+                    <a class="nav-link CSR" href="#section-CSR">Explore CSR</a>
+                    <a class="nav-link SSR" href="#section-SSR">Explore SSR</a>
                 </nav>
+            </div>
+        </section>
+
+        <section class="client-side-rendering" id="section-CSR">
+            <div class="section-badge CSR">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-monitor w-8 h-8 text-white"
+                    data-fg-d3bl23="0.8:1.23989:/src/app/App.tsx:53:17:2451:42:e:Monitor::::::DMsi">
+                    <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                    <line x1="8" x2="16" y1="21" y2="21"></line>
+                    <line x1="12" x2="12" y1="17" y2="21"></line>
+                </svg>
+                <span>CSR</span>
+            </div>
+
+            <div class="section-content CSR">
+
+                <div class="description CSR">
+                    <h2>Client-Side Rendering</h2>
+                    <p>With CSR, the browser downloads a minimal HTML page, then JavaScript runs on the client to fetch
+                        data and build the UI dynamically. The rendering happens entirely in the user's browser.</p>
+                    <span class="title-span">Best for:</span>
+                    <ul class="best-for CSR">
+                        <li>Single Page Apps</li>
+                        <li>Dashboards</li>
+                        <li>Interactive Apps</li>
+                    </ul>
+                    <span class="title-span">Popular Frameworks:</span>
+                    <ul class="frameworks CSR">
+                        <li>React</li>
+                        <li>Vue</li>
+                        <li>Angular</li>
+                    </ul>
+                </div>
+
+                <div class="evaluation CSR">
+                    <div class="advantages CSR">
+                        <h3>Advantages</h3>
+                        <ul class="advantages-list CSR">
+                            <li>Rich, interactive user experiences</li>
+                            <li>Reduced server load after initial page</li>
+                            <li>Fast subsequent page transitions</li>
+                            <li>Great for dynamic, app-like interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="disadvantages CSR">
+                        <h3>Disadvantages</h3>
+                        <ul class="disadvantages-list CSR">
+                            <li>Slower initial page load</li>
+                            <li>SEO challenges without extra tools</li>
+                            <li>Requires JavaScript to be enabled</li>
+                            <li>Potential performance issues on slow devices</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="server-side-rendering" id="section-SSR">
+            <div class="section-badge SSR">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-server w-8 h-8 text-white"
+                    data-fg-d3bl29="0.8:1.23989:/src/app/App.tsx:62:17:2932:41:e:Server::::::EIcz">
+                    <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                    <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                    <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                    <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                </svg>
+                <span>SSR</span>
+            </div>
+
+            <div class="section-content SSR">
+
+                <div class="description SSR">
+                    <h2>Server-Side Rendering</h2>
+                    <p>With SSR, the server generates the full HTML for each request. The browser receives a fully
+                        rendered page, which is immediately visible to users. JavaScript then "hydrates" the page to
+                        make it interactive.</p>
+                    <span class="title-span">Best for:</span>
+                    <ul class="best-for SSR">
+                        <li>Blogs</li>
+                        <li>E-commerce</li>
+                        <li>Marketing Sites</li>
+                    </ul>
+                    <span class="title-span">Popular Frameworks:</span>
+                    <ul class="frameworks SSR">
+                        <li>Next.js</li>
+                        <li>Nuxt.js</li>
+                        <li>SvelteKit</li>
+                    </ul>
+                </div>
+
+                <div class="evaluation SSR">
+                    <div class="advantages SSR">
+                        <h3>Advantages</h3>
+                        <ul class="advantages-list SSR">
+                            <li>Faster initial page load and First Contentful Paint</li>
+                            <li>Better SEO out of the box</li>
+                            <li>Works without JavaScript enabled</li>
+                            <li>Better performance on slower devices</li>
+                        </ul>
+                    </div>
+                    <div class="disadvantages SSR">
+                        <h3>Disadvantages</h3>
+                        <ul class="disadvantages-list SSR">
+                            <li>Higher server load and complexity</li>
+                            <li>Slower page transitions between routes</li>
+                            <li>More infrastructure costs</li>
+                            <li>Time to Interactive can be longer</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
 

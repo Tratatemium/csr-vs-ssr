@@ -11,9 +11,63 @@
 }
 
 span.hybrid-approach {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
-span.usecase  {
+span.usecase {
   font-size: 0.8em;
+}
+
+.strategies-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin: 0 auto;
+}
+
+h4 {
+  text-align: center;
+  margin: auto;
+}
+
+.strategies.hybrid-approach {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.strategies {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+ul.strategies li {
+    border-radius: 0.5em;
+    padding: 0 0.5em;
+  background-color: var(--color-background-secondary);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.hybrid-approach.badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6em;
+    margin: auto;
+}
+
+.hybrid-approach.badge svg {
+    stroke: var(--color-accent-A-1);
+}
+
+.hybrid-approach.badge span {
+    background: linear-gradient(to right, var(--color-accent-A-1), var(--color-accent-B-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }

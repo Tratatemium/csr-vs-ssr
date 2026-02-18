@@ -21,7 +21,7 @@
 
 <body>
     <div class="page-content-wraper">
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero-content">
                 <div class="guide-badge">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -508,7 +508,7 @@
             </div>
         </section>
 
-        <section class="comparison">
+        <section class="comparison" id="comparison">
             <div class="section-content comparison">
                 <h2>Side-by-Side Comparison</h2>
                 <span>Understanding the key differences between CSR and SSR at a glance</span>
@@ -588,7 +588,7 @@
             </div>
         </section>
 
-        <section class="hybrid-approach">
+        <section class="hybrid-approach" id="hybrid">
             <div class="hybrid-approach badge">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -619,7 +619,7 @@
                             </svg>
                             <span>CSR</span>
                         </div>
-                        <span class="usecase" >Dashboards, interactive features</span>
+                        <span class="usecase">Dashboards, interactive features</span>
                     </div>
                     <div class="usecase SSR">
                         <div class="section-badge SSR">
@@ -634,30 +634,67 @@
                             </svg>
                             <span>SSR</span>
                         </div>
-                        <span class="usecase" >Landing pages, blogs</span>
+                        <span class="usecase">Landing pages, blogs</span>
                     </div>
                 </div>
                 <div class="strategies hybrid-approach">
-                    <h4>Strategies avalible</h4>
-
-                    <span>Static Site Generation (SSG)</span>
-                    <span>Incremental Static Regeneration (ISR)</span>
-                    <span>Streaming SSR</span>
-                    <span>Partial Hydration</span>
+                    <div class="strategies-heading">
+                        <svg class="advantage-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-check w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                            data-fg-d3bl81="0.8:1.23989:/src/app/App.tsx:135:21:6611:65:e:Check::::::Dijm">
+                            <path d="M20 6 9 17l-5-5"></path>
+                        </svg>
+                        <h4>Strategies avalible</h4>
+                    </div>
+                    <ul class="strategies">
+                        <li>Static Site Generation (SSG)</li>
+                        <li>Incremental Static Regeneration (ISR)</li>
+                        <li>Streaming SSR</li>
+                        <li>Partial Hydration</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <footer>
             <div class="footer-content">
-                <div class="footer-links">
+                <nav class="footer-links">
+                    <a href="#home">Home</a>
                     <a href="#section-CSR">Client-Side Rendering</a>
                     <a href="#section-SSR">Server-Side Rendering</a>
                     <a href="#comparison">Comparison</a>
                     <a href="#hybrid">Hybrid Approach</a>
-                </div>
+                </nav>
                 <div class="footer-copyright">
-                    <p>&copy; 2026 Web Rendering Guide. Built for learning purposes.</p>
+                    <span>&copy; 2026 Web Rendering Guide. Built for learning purposes.</span>
+                    <div class="footer-credentials">
+                        <span>Created by Vladislav Zhuravskii | </span>
+                        <a href="https://github.com/Tratatemium" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>github [#142]</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <defs> </defs>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)"
+                                            fill="currentColor">
+                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                <path
+                                                    d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                                    id="github-[#142]"> </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span>GitHub↗</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>

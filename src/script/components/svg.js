@@ -1,4 +1,4 @@
-import { create } from "domain";
+import { create } from '../helpers.js';
 
 const SVG_ICONS = {
   globe: `
@@ -160,3 +160,15 @@ const SVG_ICONS = {
     </svg>
     `,
 };
+
+function createIcon (type) {
+    if (SVG_ICONS[type]) {
+        throw new Error(`Icon "${type}" not found`)
+    }
+
+    const template = create("template");
+    template.innerHtml = SVG_ICONS[type].trim();
+    return template.content.firstElementChild;
+};
+
+export { createIcon };

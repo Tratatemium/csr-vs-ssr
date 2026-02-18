@@ -17,3 +17,5 @@ function createSectionBadge(type) {
 
   return container;
 }
+
+export { createSectionBadge };

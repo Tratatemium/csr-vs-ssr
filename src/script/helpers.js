@@ -1,3 +1,7 @@
+const $ = (selector) => document.querySelector(selector);
+
+const $$ = (selector) => document.querySelectorAll(selector);
+
 function create (tag, options = {}) {
     const { attrs = {}, children = [], ...props } = options;
 
@@ -8,8 +12,8 @@ function create (tag, options = {}) {
         el.setAttribute(key, value);
     });
     children.forEach(child => el.append(child));
-    
+
     return el;
 }
 
-export { create };
+export { $, $$, create };

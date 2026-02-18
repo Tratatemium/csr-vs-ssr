@@ -1,0 +1,19 @@
+.usecases {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+
+.usecase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span.hybrid-approach {
+    margin-top: 1em;
+}
+
+span.usecase  {
+  font-size: 0.8em;
+}

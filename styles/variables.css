@@ -6,6 +6,7 @@
   /* Colors - Background */
   --color-background: #ffffff;
   --color-background-secondary: rgba(150, 150, 150, 0.15);
+  --color-background-footer: oklch(20.8% 0.042 265.755);
 
   /* Colors - Text */
   --color-text-primary: #314158;

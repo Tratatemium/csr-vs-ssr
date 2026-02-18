@@ -1,10 +1,9 @@
 import { $, create } from "./helpers.js";
 import { createSectionBadge } from "./components/components.js";
+import { createIcon } from "./components/svg.js";
 
-// Select container
 const pageContent = $(".page-content-wrapper");
 
-// Append badges
 pageContent.append(
   createSectionBadge("SSR"),
   createSectionBadge("CSR")

@@ -161,13 +161,17 @@ const SVG_ICONS = {
     `,
 };
 
+/**
+ * @param {string} type
+ * @returns {HTMLElement}
+ */
 function createIcon (type) {
-    if (SVG_ICONS[type]) {
+    if (!SVG_ICONS[type]) {
         throw new Error(`Icon "${type}" not found`)
     }
 
     const template = create("template");
-    template.innerHtml = SVG_ICONS[type].trim();
+    template.innerHTML = SVG_ICONS[type].trim();
     return template.content.firstElementChild;
 };
 

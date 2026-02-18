@@ -3,8 +3,3 @@ import { createSectionBadge } from "./components/components.js";
 import { createIcon } from "./components/svg.js";
 
 const pageContent = $(".page-content-wrapper");
-
-pageContent.append(
-  createSectionBadge("SSR"),
-  createSectionBadge("CSR")
-);

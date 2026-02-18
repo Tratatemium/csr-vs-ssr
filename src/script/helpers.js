@@ -20,9 +20,6 @@ const $$ = (selector) => document.querySelectorAll(selector);
  */
 function create (tag, options = {}) {
     const { attrs = {}, children = [], ...props } = options;
-    console.log(attrs)
-    console.log(children)
-    console.log(props)
 
     const el = document.createElement(tag);
 

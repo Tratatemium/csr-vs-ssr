@@ -9,6 +9,7 @@ section {
 .section-badge {
   display: flex;
   flex-direction: row;
+  width: fit-content;
   gap: 0.5em;
   padding: 0.3em 0.6em;
   border-radius: 0.5em;
@@ -33,10 +34,15 @@ section {
 
 .section-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 3em;
+  gap: 1.5em;
+}
+
+.section-content p {
+  width: 65ch;
+  text-align: center;
 }
 
 

@@ -1,3 +1,8 @@
+.approach {
+  flex-direction: row;
+  gap: 3em;
+}
+
 .approach h2,
 .approach h3 {
   text-align: left;
@@ -8,8 +13,9 @@
   flex-direction: row-reverse;
 }
 
-.approach p {
+.description p {
   width: 45ch;
+  text-align: left;
 }
 
 .evaluation {

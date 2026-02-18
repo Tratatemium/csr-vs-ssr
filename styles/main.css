@@ -2,5 +2,7 @@
 @import "./variables.css";
 @import "./styles.css";
 @import "./hero.css";
-@import "./sections.css";
-@import "./approaches.css";
+@import "./sections/sections.css";
+@import "./sections/approaches.css";
+@import "./sections/comparison.css";
+@import "./sections//hybrid.css";

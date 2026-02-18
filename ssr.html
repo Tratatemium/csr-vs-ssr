@@ -510,13 +510,141 @@
 
         <section class="comparison">
             <div class="section-content comparison">
+                <h2>Side-by-Side Comparison</h2>
+                <span>Understanding the key differences between CSR and SSR at a glance</span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Feature</th>
+                            <th scope="col">
+                                <div class="section-badge CSR">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-monitor w-8 h-8 text-white"
+                                        data-fg-d3bl23="0.8:1.23989:/src/app/App.tsx:53:17:2451:42:e:Monitor::::::DMsi">
+                                        <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                        <line x1="8" x2="16" y1="21" y2="21"></line>
+                                        <line x1="12" x2="12" y1="17" y2="21"></line>
+                                    </svg>
+                                    <span>CSR</span>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="section-badge SSR">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-server w-8 h-8 text-white"
+                                        data-fg-d3bl29="0.8:1.23989:/src/app/App.tsx:62:17:2932:41:e:Server::::::EIcz">
+                                        <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                                        <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                                        <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                                        <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                                    </svg>
+                                    <span>SSR</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
 
+                    <tbody>
+                        <tr>
+                            <th scope="row">Initial Load Speed</th>
+                            <td>Slower</td>
+                            <td>Faster</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SEO</th>
+                            <td>Challenging</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Server Load</th>
+                            <td>Low</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Interactivity</th>
+                            <td>Immediate after load</td>
+                            <td>After hydration</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Best Use Case</th>
+                            <td>Web apps, dashboards</td>
+                            <td>Content sites, e-commerce</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Time to First Byte</th>
+                            <td>Fast</td>
+                            <td>Variable</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JavaScript Required</th>
+                            <td>Yes</td>
+                            <td>No (for basic content)</td>
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <section class="hybrid-approach">
+            <div class="hybrid-approach badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="logos-divider"
+                    data-fg-d3bl26="0.8:1.23989:/src/app/App.tsx:58:13:2641:53:e:ArrowRightLeft::::::DG0a">
+                    <path d="m16 3 4 4-4 4"></path>
+                    <path d="M20 7H4"></path>
+                    <path d="m8 21-4-4 4-4"></path>
+                    <path d="M4 17h16"></path>
+                </svg>
+                <span>Modern Approach</span>
+            </div>
             <div class="section-content hybrid-approach">
+                <h2>Hybrid Rendering</h2>
+                <span>Best of Both Worlds</span>
+                <p>Modern frameworks like Next.js, Nuxt, and SvelteKit support mixing rendering strategies on a per-page
+                    or per-component basis. You can use SSR for SEO-critical pages and CSR for dynamic interactions.</p>
+                <div class="usecases hybrid-approach">
+                    <div class="usecase CSR">
+                        <div class="section-badge CSR">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-monitor w-8 h-8 text-white"
+                                data-fg-d3bl23="0.8:1.23989:/src/app/App.tsx:53:17:2451:42:e:Monitor::::::DMsi">
+                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                <line x1="12" x2="12" y1="17" y2="21"></line>
+                            </svg>
+                            <span>CSR</span>
+                        </div>
+                        <span>Dashboards, interactive features</span>
+                    </div>
+                    <div class="usecase SSR">
+                        <div class="section-badge SSR">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-server w-8 h-8 text-white"
+                                data-fg-d3bl29="0.8:1.23989:/src/app/App.tsx:62:17:2932:41:e:Server::::::EIcz">
+                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                            </svg>
+                            <span>SSR</span>
+                        </div>
+                        <span>Landing pages, blogs</span>
+                    </div>
+                </div>
+                <div class="strategies hybrid-approach">
+                    <h4>Strategies avalible</h4>
 
+                    <span>Static Site Generation (SSG)</span>
+                    <span>Incremental Static Regeneration (ISR)</span>
+                    <span>Streaming SSR</span>
+                    <span>Partial Hydration</span>
+                </div>
             </div>
         </section>
 

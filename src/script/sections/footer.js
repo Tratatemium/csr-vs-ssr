@@ -6,7 +6,7 @@ function createFooter() {
     ["#home", "Home"],
     ["#section-CSR", "Client-Side Rendering"],
     ["#section-SSR", "Server-Side Rendering"],
-    ["#section-SSR", "Server-Side Rendering"],
+    ["#comparison", "Comparison"],
     ["#hybrid", "Hybrid Approach"],
   ];
 

@@ -24,7 +24,7 @@ function createComparisson() {
             textContent:
               "Understanding the key differences between CSR and SSR at a glance",
           }),
-          create("teble", {
+          create("table", {
             children: [
               create("thead", {
                 children: [

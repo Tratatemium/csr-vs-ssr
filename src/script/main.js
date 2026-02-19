@@ -14,7 +14,7 @@ const pageSections = [
   createHero(),
 //   createApproaches(),
 //   createComparisson(),
-//   createHybrid(),
+  createHybrid(),
   createFooter(),
 ];
 

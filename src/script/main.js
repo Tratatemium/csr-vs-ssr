@@ -11,7 +11,7 @@ import { createHybrid } from "./sections/hybrid.js";
 const pageContent = $(".page-content-wrapper");
 
 const pageSections = [
-//   createHero(),
+  createHero(),
 //   createApproaches(),
 //   createComparisson(),
 //   createHybrid(),

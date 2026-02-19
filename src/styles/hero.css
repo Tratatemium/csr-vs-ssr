@@ -75,6 +75,14 @@
   font-weight: 500;
 }
 
+.render-method.SSR {
+  color: var(--color-accent-B-3);
+}
+
+.render-method.CSR {
+  color: var(--color-accent-A-3);
+}
+
 .hero-content p {
   display: block;
   text-align: center;

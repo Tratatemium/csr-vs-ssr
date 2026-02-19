@@ -13,7 +13,7 @@ const pageContent = $(".page-content-wrapper");
 const pageSections = [
   createHero(),
 //   createApproaches(),
-//   createComparisson(),
+  createComparisson(),
   createHybrid(),
   createFooter(),
 ];

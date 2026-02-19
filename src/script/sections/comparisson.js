@@ -64,6 +64,4 @@ function createComparisson() {
   return comparisson;
 }
 
-// create("div", { className: "", children: [] }),
-
 export { createComparisson };

@@ -18,18 +18,20 @@ const $$ = (selector) => document.querySelectorAll(selector);
  * @param {object} [options.props]
  * @returns {HTMLElement}
  */
-function create (tag, options = {}) {
-    const { attrs = {}, children = [], ...props } = options;
+function create(tag, options = {}) {
+  const { attrs = {}, children = [], ...props } = options;
 
-    const el = document.createElement(tag);
+  const el = document.createElement(tag);
 
-    Object.assign(el, props);
-    Object.entries(attrs).forEach(([key, value]) => {
-        el.setAttribute(key, value);
-    });
-    children.forEach(child => el.append(child));
+  Object.assign(el, props);
+  Object.entries(attrs).forEach(([key, value]) => {
+    el.setAttribute(key, value);
+  });
+  children.forEach((child) => el.append(child));
 
-    return el;
+  return el;
 }
 
-export { $, $$, create };
+const capitalize = (str) => (str ? str[0].toUpperCase() + str.slice(1) : str);
+
+export { $, $$, create, capitalize };

@@ -12,13 +12,13 @@ const pageContent = $(".page-content-wrapper");
 
 const pageSections = [
   createHero(),
-//   createApproaches(),
+  createApproaches(),
   createComparisson(),
   createHybrid(),
   createFooter(),
 ];
 
 const fragment = document.createDocumentFragment();
-pageSections.forEach(section => fragment.appendChild(section));
+pageSections.forEach((section) => fragment.appendChild(section));
 
 pageContent.appendChild(fragment);

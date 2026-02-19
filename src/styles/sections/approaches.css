@@ -171,3 +171,65 @@
     oklch(70.5% 0.213 47.604)
   );
 }
+
+@media (max-width: 768px) {
+  .approach {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .approach.SSR {
+    flex-direction: column;
+  }
+
+  .approach h2,
+  .approach h3 {
+    text-align: center;
+  }
+
+  .description p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .best-for-list,
+  .frameworks-list {
+    padding: 0;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  .best-for-list li {
+    font-size: 0.75em;
+    padding: 0.3em 0.6em;
+  }
+
+  .advantages-heading,
+  .disadvantages-heading {
+    margin-left: 0.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .approach {
+    gap: 1em;
+  }
+
+  .description p {
+    width: 100%;
+    font-size: 0.95em;
+  }
+
+  .evaluation {
+    gap: 1em;
+  }
+
+  .advantages,
+  .disadvantages {
+    padding: 0.75em;
+  }
+
+  .framework {
+    font-size: 0.95em;
+  }
+}

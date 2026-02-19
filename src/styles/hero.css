@@ -112,3 +112,54 @@
     border-color: var(--color-accent-B-3);
     background: var(--gradient-B);
 }
+
+@media (max-width: 768px) {
+  .hero-content {
+    margin: 2em auto 0 auto;
+  }
+
+  .hero-content p {
+    width: 100%;
+    font-size: 1em;
+    margin: 1em 0.5em;
+  }
+
+  .logos-container {
+    margin: 2em auto;
+    gap: 0.8em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logos-container svg {
+    width: 1.5em;
+  }
+
+  .guide-badge {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content p {
+    width: 100%;
+    font-size: 0.95em;
+  }
+
+  .logos-container {
+    gap: 0.5em;
+  }
+
+  .item-icon {
+    padding: 0.75em;
+  }
+
+  .item-icon svg {
+    width: 1.5em;
+  }
+
+  .render-link {
+    padding: 0.6em 1.5em;
+    font-size: 0.95em;
+  }
+}

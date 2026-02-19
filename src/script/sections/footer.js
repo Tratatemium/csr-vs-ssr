@@ -3,30 +3,19 @@ import { createSectionBadge } from "../components/components.js";
 import { createIcon } from "../components/svg.js";
 
 function createFooter() {
+  const links = [
+    ["#home", "Home"],
+    ["#section-CSR", "Client-Side Rendering"],
+    ["#section-SSR", "Server-Side Rendering"],
+    ["#section-SSR", "Server-Side Rendering"],
+    ["#hybrid", "Hybrid Approach"],
+  ];
+
   const nav = create("nav", {
     className: "footer-links",
-    children: [
-      create("a", {
-        href: "#home",
-        textContent: "Home",
-      }),
-      create("a", {
-        href: "#section-CSR",
-        textContent: "Client-Side Rendering",
-      }),
-      create("a", {
-        href: "#section-SSR",
-        textContent: "Server-Side Rendering",
-      }),
-      create("a", {
-        href: "#comparison",
-        textContent: "Comparison",
-      }),
-      create("a", {
-        href: "#hybrid",
-        textContent: "Hybrid Approach",
-      }),
-    ],
+    children: links.map(([href, text]) =>
+      create("a", { href, textContent: text }),
+    ),
   });
 
   const footerCopyright = create("div", {

@@ -9,6 +9,7 @@ import { createComparisson } from "./sections/comparisson.js";
 import { createHybrid } from "./sections/hybrid.js";
 
 const pageContent = $(".page-content-wrapper");
+const loader = $(".loader");
 
 const pageSections = [
   createHero(),
@@ -22,3 +23,6 @@ const fragment = document.createDocumentFragment();
 pageSections.forEach((section) => fragment.appendChild(section));
 
 pageContent.appendChild(fragment);
+
+loader.classList.toggle("hidden");
+pageContent.classList.toggle("hidden");

@@ -1,6 +1,4 @@
-import { $, create } from "./helpers.js";
-import { createSectionBadge } from "./components/components.js";
-import { createIcon } from "./components/svg.js";
+import { $ } from "./helpers.js";
 
 import { createFooter } from "./sections/footer.js";
 import { createHero } from "./sections/hero.js";

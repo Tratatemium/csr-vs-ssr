@@ -22,5 +22,5 @@ pageSections.forEach((section) => fragment.appendChild(section));
 
 pageContent.appendChild(fragment);
 
-loader.classList.toggle("hidden");
+loader?.classList.toggle("hidden");
 pageContent.classList.toggle("hidden");
